@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Validado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form id="loginForm">
+
+    <label>Usuario</label>
+    <input type="text" id="usuario">
+    <div id="userError" class="error"></div>
+
+    <label>Email</label>
+    <input type="text" id="email">
+    <div id="emailError" class="error"></div>
+
+    <label>Contraseña</label>
+    <input type="password" id="password">
+
+    <button type="button" id="togglePass">
+        Mostrar / Ocultar
+    </button>
+
+    <div>
+        Caracteres: <span id="contador">0</span>
+    </div>
+
+    <div id="passStrength"></div>
+
+    <div id="formMsg"></div>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
